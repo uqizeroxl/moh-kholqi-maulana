@@ -25,9 +25,11 @@
   </head>
   <body>
     <h1 class="teks-A">tugas awal</h1>
-    <h4>moh kholqi maulana</h4>
-    <h4>TI A 22</h4>
-    <h4>2022020100086</h4>
+    {% for x in data %}
+    <h4>{{x.nama}}</h4>
+    <h4>{{x.kelas}}</h4>
+    <h4>{{x.Npm}}</h4>
+    {% endfor %}
 
     <a href="home/">biodata lengkap</a>
   </body>
